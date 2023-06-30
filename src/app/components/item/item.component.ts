@@ -15,4 +15,8 @@ export class ItemComponent {
     this.deleteItem.emit(item);
   }
 
+  onToggle(item: Item){
+    item.completed = !item.completed;
+  }
+
 }
