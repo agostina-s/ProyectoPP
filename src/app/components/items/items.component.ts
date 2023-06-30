@@ -22,6 +22,20 @@ export class ItemsComponent {
       price: 3000,
       quantity: 3,
       completed: true
-    }
+    },
+    {
+      id: 2,
+      title: 'Este dolor no es mío',
+      price: 3500,
+      quantity: 1,
+      completed: true
+    },
+    {
+      id: 3,
+      title: 'Sinsajo',
+      price: 2500,
+      quantity: 2,
+      completed: false
+    },
     ];
 }
