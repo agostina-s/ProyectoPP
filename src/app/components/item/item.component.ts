@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Item } from 'src/app/models/item';
 
 @Component({
@@ -9,5 +9,10 @@ import { Item } from 'src/app/models/item';
 export class ItemComponent {
 
   @Input() item: Item = new Item();
+  @Output() deleteItem: EventEmitter<Item> = new EventEmitter();
+
+  onDelete(item: Item){
+    this.deleteItem.emit(item);
+  }
 
 }
