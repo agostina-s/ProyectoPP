@@ -2,6 +2,10 @@
   display: flex;
   box-sizing: border-box;
 }
+.row:hover{
+  border-radius: 3px;
+  background: #eee;
+}
 .completed{
   text-decoration: line-through;
   color: #ccc;
@@ -15,25 +19,35 @@ div{
 .title{
   display: flex;
   width: 15%;
-  padding: 0 5px;
+  padding: 10 5px;
 }
 .price{
   width: 50%;
-  padding: 0 5px;
+  padding: 10 5px;
 }
 .quantity{
   width: 10%;
-  padding: 0 5px;
+  padding: 10 5px;
 }
 .total{
   width: 15%;
   font-weight: bolder;
   color: green;
-  padding: 0 5px;
+  padding: 10 5px;
 }
 .actions{
   width: 10%;
   text-align: center;
   box-sizing: border-box;
-  padding: 0 5px;
+  padding: 5 5px;
 }
+.actions button{
+  border: none;
+  font-size: 12px;
+  background-color: rgb(65, 49, 97);
+  color: rgb(223, 176, 255);
+  padding: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
