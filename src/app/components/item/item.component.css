@@ -2,6 +2,13 @@
   display: flex;
   box-sizing: border-box;
 }
+.completed{
+  text-decoration: line-through;
+  color: #ccc;
+}
+.completed .total{
+  color: #ccc;
+}
 div{
   padding: 10px 0;
 }
