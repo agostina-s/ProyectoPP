@@ -42,15 +42,17 @@ export class ItemService {
   ];
   constructor(private http:HttpClient) { }
 
-  getItems():Observable<Item[]>{
-    //return this.items;
+  getItems():Observable<Item[]>{ //obtener items
     return this.http.get<Item[]>(this.url);
-
   }
 
-  addItem(item:Item):Observable<Item>{
-    //this.items.unshift(item);
+  addItem(item:Item):Observable<Item>{  //añadr items
     return this.http.post<Item>(this.url, item, this.httpOptions);
-
+  }
+  toggleItem(item:Item):Observable<Item>{  //actualizar con toggle
+    return this.http.put<Item>(this.url + item.id, item, this.httpOptions);
+  }
+  deleteItem(item:Item):Observable<Item>{  //borrar
+    return this.http.delete<Item>(this.url + item.id);
   }
 }
